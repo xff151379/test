@@ -5,7 +5,7 @@ const readline = require('readline');
 
 
 const addresses = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 1000000; i++) {
     const wallet = ethers.Wallet.createRandom();
     addresses.push(wallet.address);
     console.log(addresses[i]);
